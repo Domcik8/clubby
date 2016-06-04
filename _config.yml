@@ -1,0 +1,12 @@
+# Site settings
+title: clubby
+
+description:
+  clubby is a social cottage reservation system built by team-asdasd as a software development group project in Vilnius University.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://team-asdasd.github.io/clubby" # the base hostname & protocol for your site
+github_username:  team-asdasd
+
+# Build settings
+markdown: kramdown

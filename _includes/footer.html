@@ -1,0 +1,32 @@
+<div class="mastfoot">
+    <div class="inner">
+        <div class="wrapper">
+            <div class="footer-col-wrapper">
+                <div class="footer-col footer-col-3">
+                    <ul class="social-media-list">
+                        {% if site.github_username %}
+                        <li>
+                            {% include icon-github.html username=site.github_username %}
+                        </li>
+                        {% endif %} {% if site.twitter_username %}
+                        <li>
+                            {% include icon-twitter.html username=site.twitter_username %}
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+                {% if (site.posts.size) > 0 %}
+                <div class="footer-col footer-col-3">
+                    <ul class="contact-list">
+                        {% for post in site.posts %}
+                        <li>
+                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
